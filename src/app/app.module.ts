@@ -15,6 +15,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { StatsCardComponent } from './stats-card/stats-card.component';
 import { LoginComponent } from './login/login.component';
+import { RecentRequestedBooksComponent } from './recent-requested-books/recent-requested-books.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoginComponent } from './login/login.component';
     ToolBarComponent,
     ProfileBadgeComponent,
     StatsCardComponent,
-    LoginComponent
+    LoginComponent,
+    RecentRequestedBooksComponent
   ],
   imports: [
     BrowserModule,
