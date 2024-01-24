@@ -1,0 +1,10 @@
+<div class="profile-container">
+    <button mat-icon-button [matMenuTriggerFor]="menu" >
+        <img src="assets/profile.jpg" height="40" width="40" class="profile-pic">
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item routerLink="/login">Logout</button>
+      </mat-menu>
+     
+</div>
