@@ -1,1 +1,23 @@
-<p>recent-requested-books works!</p>
+<div class="recent-book-header">
+  <span class="text-header">Recent Book</span>
+  <div style="flex: 1"></div>
+  <button mat-button>Show more</button>
+</div>
+
+<div *ngFor="let books of recentRequestedBooks" class="books">
+  <div class="book-image">
+  <img src="{{ books.thumbnailUrl }}" alt="{{ books.title }}"  />
+  </div>
+  <div class="book-details">
+    <span class="book-title">{{ books.title }}</span>
+    <span class="book-author">{{ books.authors }}</span>
+  </div>
+  <div class="book-details">
+    <span>Requested by</span>
+    <span class="book-requested-by">{{ books.requestedBy }}</span>
+  </div>
+  
+    <span>{{books.requestDate}}</span>
+    <button mat-raised-button color="primary">Approve</button>
+  
+</div>
