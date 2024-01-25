@@ -17,6 +17,7 @@ import { StatsCardComponent } from './stats-card/stats-card.component';
 import { LoginComponent } from './login/login.component';
 import { RecentRequestedBooksComponent } from './recent-requested-books/recent-requested-books.component';
 import { RequestedBooksComponent } from './requested-books/requested-books.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RequestedBooksComponent } from './requested-books/requested-books.compo
     StatsCardComponent,
     LoginComponent,
     RecentRequestedBooksComponent,
-    RequestedBooksComponent
+    RequestedBooksComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import { RequestedBooksComponent } from './requested-books/requested-books.compo
     MatIconModule,
     MatMenuModule,
     MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

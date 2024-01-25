@@ -1,1 +1,24 @@
-<p>requested-books works!</p>
+<app-tool-bar></app-tool-bar>
+<div class="content mat-elevation-z2">
+<div *ngFor="let book of Requestedbooks">
+    <mat-card style="margin:10px;">
+        <div class="book-image">
+            <img src="{{ book.thumbnailUrl }}" alt="{{ book.title }}"  />
+            </div>
+            <div class="book-details">
+              <span class="book-title">{{ book.title }}</span>
+              <span class="book-author">{{ book.authors }}</span>
+            </div>
+            <div class="book-details">
+              <span>Requested by</span>
+              <span class="book-requested-by">{{ book.requestedBy }}</span>
+            </div>
+            
+              <span>{{book.requestDate}}</span>
+              <button mat-raised-button color="primary">Approve</button>
+            
+    </mat-card>
+
+</div>
+
+</div>
