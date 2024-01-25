@@ -1,0 +1,58 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: calc(100vh - 98px);
+    margin: 16px 32px 16px 32px;
+}
+
+
+
+
+.text-header {
+    padding: 10px;
+}
+
+
+.books {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 6px;
+    line-height: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.book-image {
+    display: flex;
+    object-fit: contain;
+    height: 80px;
+    background-color: #dee8eb;
+}
+
+.book-author {
+    font-weight: 200;
+    color: grey;
+}
+
+.book-requested-by {
+    color: grey;
+    font-size: 16px;
+}
+
+.book-title {
+    font-weight: 600;
+    font-size: 18px;
+}
