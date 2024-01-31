@@ -1,1 +1,15 @@
-<p>user-list works!</p>
+<app-tool-bar></app-tool-bar>
+<div class="content mat-elevation-z2">
+  <div>
+    <div class="card-container">
+        <div *ngFor="let user of users" class="card">
+          <img [src]="user.avatar" alt="{{ user.name }}" class="user-profile" />
+          <div class="user-name">
+          <h3>{{ user.name }} <br>({{ user.age }})</h3>
+          <p>{{user.email}}</p>
+          <p>{{user.phone}}</p>
+        </div>
+        </div>
+      </div>
+  </div>
+</div>

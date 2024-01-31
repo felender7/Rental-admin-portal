@@ -11,8 +11,11 @@
       <button mat-button routerLink="/books" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/books', true) }">
         <mat-icon>book</mat-icon> Books
       </button>
+      <button mat-button routerLink="/users" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/users', true) }">
+        <mat-icon>person</mat-icon> Users
+      </button>
   
-      <button mat-button routerLink="/user" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/user', true) }">
+      <button mat-button >
         <app-profile-badge></app-profile-badge>
       </button>
     </mat-toolbar-row>
