@@ -1,1 +1,8 @@
-<p>book-list works!</p>
+<app-tool-bar></app-tool-bar>
+<div class="content mat-elevation-z2">
+   
+    <div *ngFor="let book of books">
+    <img src="{{book.thumbnailUrl}}">
+    </div>
+    
+</div>
