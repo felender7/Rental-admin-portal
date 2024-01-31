@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { RecentRequestedBooksComponent } from './recent-requested-books/recent-requested-books.component';
 import { RequestedBooksComponent } from './requested-books/requested-books.component';
 import {MatCardModule} from '@angular/material/card';
+import { BookListComponent } from './book-list/book-list.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {MatCardModule} from '@angular/material/card';
     LoginComponent,
     RecentRequestedBooksComponent,
     RequestedBooksComponent,
+    BookListComponent,
     
   ],
   imports: [
