@@ -19,6 +19,7 @@ import { RecentRequestedBooksComponent } from './recent-requested-books/recent-r
 import { RequestedBooksComponent } from './requested-books/requested-books.component';
 import {MatCardModule} from '@angular/material/card';
 import { BookListComponent } from './book-list/book-list.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -34,6 +35,7 @@ import { BookListComponent } from './book-list/book-list.component';
     RecentRequestedBooksComponent,
     RequestedBooksComponent,
     BookListComponent,
+    UserListComponent,
     
   ],
   imports: [
