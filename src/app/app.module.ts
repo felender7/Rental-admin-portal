@@ -19,7 +19,9 @@ import { RecentRequestedBooksComponent } from './recent-requested-books/recent-r
 import { RequestedBooksComponent } from './requested-books/requested-books.component';
 import {MatCardModule} from '@angular/material/card';
 import { BookListComponent } from './book-list/book-list.component';
-import {MatDividerModule} from '@angular/material/divider';
+
+
+
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatMenuModule,
     MatGridListModule,
     MatCardModule,
-    MatDividerModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -40,7 +40,7 @@ export class BookListComponent {
       },
       {
         "_id": 3,
-        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "title": "A Handbook of Agile Software Craftsmanship",
         "isbn": "978-0132350884",
         "pageCount": 464,
         "publishedDate": {
@@ -55,7 +55,7 @@ export class BookListComponent {
       },
       {
         "_id": 4,
-        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "title": "Elements of Reusable Object-Oriented Software",
         "isbn": "978-0201633610",
         "pageCount": 416,
         "publishedDate": {
@@ -85,7 +85,7 @@ export class BookListComponent {
       },
       {
         "_id": 6,
-        "title": "Sapiens: A Brief History of Humankind",
+        "title": "A Brief History of Humankind",
         "isbn": "978-0062316097",
         "pageCount": 464,
         "publishedDate": {
@@ -159,6 +159,7 @@ export class BookListComponent {
         "categories": ["Science Fiction"]
       }
     ]
+
 
 
 }

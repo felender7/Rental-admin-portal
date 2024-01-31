@@ -5,3 +5,52 @@
     height: calc(100vh - 98px);
     margin: 16px 32px 16px 32px;
 }
+
+.book-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.book-card {
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+}
+
+.book-discription {
+    display: flex;
+    justify-content: center;
+}
+
+.book-img {
+    height: 130px;
+    width: 104px;
+    object-fit: cover;
+}
+
+.book-button {
+    position: absolute;
+    right: 0;
+}
+
+.book-title-author-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.book-title {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 80%;
+    font-weight: 800;
+    color: 3f51b5;
+}
+
+.book-author {
+    font-size: 0.9em;
+}
