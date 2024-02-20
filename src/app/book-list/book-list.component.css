@@ -4,53 +4,61 @@
     border-radius: 5px;
     height: calc(100vh - 98px);
     margin: 16px 32px 16px 32px;
+    padding: 20px;
 }
 
 .book-content {
     display: flex;
-    justify-content: space-between;
-    margin: 16px;
     flex-wrap: wrap;
-    gap: 16px;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.book-card-container {
+    width: calc(32% - 12px);
+    margin-bottom: 24px;
 }
 
 .book-card {
-    width: 350px;
-    height: 250px;
-    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.book-button {
+    align-self: flex-end;
 }
 
 .book-discription {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .book-img {
-    height: 130px;
-    width: 104px;
+    width: 50%;
+    height: 250px;
     object-fit: cover;
-}
-
-.book-button {
-    position: absolute;
-    right: 0;
+    margin-bottom: 12px;
+    object-fit: scale-down;
 }
 
 .book-title-author-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
+    text-align: center;
 }
 
 .book-title {
-    font-size: 1.1em;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    width: 80%;
-    font-weight: 800;
-    color: 3f51b5;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
 }
 
 .book-author {
-    font-size: 0.9em;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.booklist-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
 }

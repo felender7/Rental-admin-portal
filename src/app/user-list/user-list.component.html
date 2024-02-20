@@ -5,7 +5,7 @@
         <div *ngFor="let user of users" class="card">
           <img [src]="user.avatar" alt="{{ user.name }}" class="user-profile" />
           <div class="user-name">
-          <h3>{{ user.name }} <br>({{ user.age }})</h3>
+          <h3>{{ user.name | uppercase}} <br>({{ user.age }})</h3>
           <p>{{user.email}}</p>
           <p>{{user.phone}}</p>
         </div>

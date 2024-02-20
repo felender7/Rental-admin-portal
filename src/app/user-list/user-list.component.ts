@@ -9,7 +9,7 @@ export class UserListComponent {
   users = [
     {
       id: 1,
-      name: 'John Smith',
+      name: 'Kate Williams',
       email: 'john.smith@example.com',
       gender: 'male',
       age: 32,

@@ -1,27 +1,34 @@
 <app-tool-bar></app-tool-bar>
 <div class="content mat-elevation-z2">
-   <div class="book-content">
-    <div *ngFor="let book of books">
-        <mat-card class="book-card mat-elevation-z2">
-            <button mat-icon-button  class="book-button" [matMenuTriggerFor]="menu">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu">
-                <button mat-menu-item>View</button>
-                <button mat-menu-item>Edit</button>
-                <button mat-menu-item>Delete</button>
-              </mat-menu>
-            <mat-card-content class="book-discription">
-                <img src="{{book.thumbnailUrl}}" class="book-img" >
-                <div class="book-title-author-content ">
-                    <span class="book-title mat-primary">{{book.title}}</span>
-                    <div *ngFor="let author of book.authors">
-                        <span class="book-author">{{author}}</span>
-                    </div>
-                </div>
-            </mat-card-content>
-        </mat-card>
-    
+  <div class="booklist-header">
+    <button mat-raised-button (click)="openDialog()" color="primary" >
+      <mat-icon>add</mat-icon>
+      Add Book
+      </button>
+     
+      <input type="text" placeholder="Search Book">
+  </div>
+  <div class="book-content">
+    <div class="book-card-container" *ngFor="let book of books">
+      <mat-card class="book-card mat-elevation-z2">
+        <button mat-icon-button class="book-button" [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>View</button>
+          <button mat-menu-item>Edit</button>
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
+        <mat-card-content class="book-discription">
+          <img [src]="book.thumbnailUrl" class="book-img" alt="{{ book.title }}">
+          <div class="book-title-author-content">
+            <span class="book-title mat-primary">{{ book.title }}</span>
+            <div *ngFor="let author of book.authors">
+              <span class="book-author">{{ author }}</span>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
-</div>
+  </div>
 </div>

@@ -1,4 +1,7 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
+import { NewBookComponent } from '../new-book/new-book.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-book-list',
@@ -160,6 +163,8 @@ export class BookListComponent {
       }
     ]
 
-
-
+     constructor(public dialog:MatDialog){}
+    openDialog(){
+     const dialogRef = this.dialog.open(NewBookComponent)
+    }
 }

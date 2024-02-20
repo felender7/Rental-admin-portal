@@ -20,6 +20,8 @@ import { RequestedBooksComponent } from './requested-books/requested-books.compo
 import {MatCardModule} from '@angular/material/card';
 import { BookListComponent } from './book-list/book-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { NewBookComponent } from './new-book/new-book.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -36,6 +38,7 @@ import { UserListComponent } from './user-list/user-list.component';
     RequestedBooksComponent,
     BookListComponent,
     UserListComponent,
+    NewBookComponent,
     
   ],
   imports: [
@@ -49,6 +52,7 @@ import { UserListComponent } from './user-list/user-list.component';
     MatMenuModule,
     MatGridListModule,
     MatCardModule,
+    MatDialogModule,
   
   ],
   providers: [],
