@@ -1,1 +1,34 @@
-<p>new-book works!</p>
+<h2 mat-dialog-title>Add a new book</h2>
+<mat-dialog-content>
+    <form [formGroup]="bookForm" (submit)="onSubmit()">
+    <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Book Title</mat-label>
+        <input  matInput formControlName="bookTitle">
+    </mat-form-field> <br>
+    <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Book ISBN</mat-label>
+        <input matInput  formControlName="bookIsbn">
+    </mat-form-field>
+<br>
+    <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Book Author</mat-label>
+        <input matInput formControlName="bookAuthor"/>
+
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Book Catagory</mat-label>
+        <input matInput formControlName="bookCategory">
+    </mat-form-field>
+<br>
+    <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Book Description</mat-label>
+        <input matInput formControlName="bookDescription">
+
+    </mat-form-field>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions> 
+    <button type="submit" [disabled]="!bookForm.valid" mat-raised-button color="primary"><mat-icon>save</mat-icon> Save </button>
+</mat-dialog-actions>

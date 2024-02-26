@@ -165,6 +165,8 @@ export class BookListComponent {
 
      constructor(public dialog:MatDialog){}
     openDialog(){
-     const dialogRef = this.dialog.open(NewBookComponent)
+     const dialogRef = this.dialog.open(NewBookComponent,{
+      width: '800px',
+     })
     }
 }

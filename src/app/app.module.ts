@@ -22,6 +22,10 @@ import { BookListComponent } from './book-list/book-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewBookComponent } from './new-book/new-book.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'
+
 
 
 
@@ -53,6 +57,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     MatCardModule,
     MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule
   
   ],
   providers: [],
