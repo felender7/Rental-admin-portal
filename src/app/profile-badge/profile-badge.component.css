@@ -1,8 +1,11 @@
-.profile-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.profile-pic {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
 
+}
+
+button.mat-icon-button {
+    display: flex;
+    align-items: center;
 }

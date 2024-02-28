@@ -21,7 +21,7 @@ export class NewBookComponent {
   onSubmit(){
     if(this.bookForm.valid){
       console.log(this.bookForm.value)
-      this.bookForm.reset()
+      
     }
   }
 }

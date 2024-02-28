@@ -1,0 +1,67 @@
+:host {
+    background: #667db6;
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, s#667db6);
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, s #667db6);
+    border-radius: 4px;
+    padding: auto;
+    margin: 10px;
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.2rem;
+    margin: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 340px
+}
+
+#month {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#day {
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+#time {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+#icon {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#temp_desc {
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+#temp {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.container {
+    margin: 14px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}

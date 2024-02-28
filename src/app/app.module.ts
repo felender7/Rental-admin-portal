@@ -25,7 +25,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { WeatherCardComponent } from './weather-card/weather-card.component'
+import { WeatherCardComponent } from './weather-card/weather-card.component';
+import { FooterComponent } from './footer/footer.component'
 
 
 
@@ -45,6 +46,7 @@ import { WeatherCardComponent } from './weather-card/weather-card.component'
     UserListComponent,
     NewBookComponent,
     WeatherCardComponent,
+    FooterComponent,
     
   ],
   imports: [

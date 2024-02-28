@@ -1,23 +1,20 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row class="mat-toolbar-single-row">
-      <button mat-button routerLink="/" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/', true) }">
-        <mat-icon>home</mat-icon> Home 
-      </button>
-  
-      <button mat-button routerLink="/requested-books" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/requested-books', true) }">
-        <mat-icon>library_books</mat-icon> Request
-      </button>
-  
-      <button mat-button routerLink="/books" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/books', true) }">
-        <mat-icon>book</mat-icon> Books
-      </button>
-      <button mat-button routerLink="/users" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/users', true) }">
-        <mat-icon>person</mat-icon> Users
-      </button>
-  
-      <button mat-button >
-        <app-profile-badge></app-profile-badge>
-      </button>
-    </mat-toolbar-row>
-  
-  </mat-toolbar>
+  <span>ADMIN PORTAL </span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/', true) }">
+    <mat-icon>home</mat-icon> Home 
+  </button>
+  <button mat-button routerLink="/requested-books" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/requested-books', true) }">
+    <mat-icon>library_books</mat-icon> Request
+  </button>
+  <button mat-button routerLink="/books" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/books', true) }">
+    <mat-icon>book</mat-icon> Books
+  </button>
+  <button mat-button routerLink="/users" routerLinkActive="active" [ngClass]="{'mat-primary': router.isActive('/users', true) }">
+    <mat-icon>person</mat-icon> Users
+  </button>
+  <span class="spacer"></span>
+  <button mat-icon-button>
+    <app-profile-badge></app-profile-badge>
+  </button>
+</mat-toolbar>

@@ -1,4 +1,7 @@
-.mat-toolbar-single-row {
-    height: 48px;
-    min-height: 48px;
+.spacer {
+    flex: 1;
+}
+
+.right-corner {
+    margin-left: auto;
 }

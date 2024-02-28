@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 
 
 .card {
+    display: flex;
     border-radius: 4px;
-    ;
     background-color: #fafafa;
     border: 1px solid #eee;
     height: 100px;
-    width: 340px;
+    width: 100%;
     padding: 0 18px 0;
     align-items: center;
     margin: 0 5px;
